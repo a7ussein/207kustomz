@@ -149,96 +149,52 @@
   }
 
   .services-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    /* Firefox */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  .services-grid::-webkit-scrollbar {
-    display: none;
-    /* Chrome/Safari */
-  }
 
-  .service-card {
-    flex: 0 0 85%;
-    scroll-snap-align: center;
-  }
 
   .gallery-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-    padding-bottom: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
-    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .gallery-grid::-webkit-scrollbar {
-    display: none;
-  }
+
 
   .gallery-item {
-    flex: 0 0 85%;
     height: 350px;
-    scroll-snap-align: center;
+    /* flex removed */
   }
 
   .process-steps {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
-    scrollbar-width: none;
   }
 
-  .process-steps::-webkit-scrollbar {
-    display: none;
-  }
+
 
   .process-step {
-    flex: 0 0 85%;
-    scroll-snap-align: center;
     background: var(--card);
     border: 1px solid rgba(255, 255, 255, 0.05);
     /* Softer border */
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     /* Premium inner glow */
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: 20px;
     /* Slightly softer corners */
   }
 
   .reviews-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
-    scrollbar-width: none;
   }
 
-  .reviews-grid::-webkit-scrollbar {
-    display: none;
-  }
 
-  .review-card {
-    flex: 0 0 85%;
-    scroll-snap-align: center;
-  }
 
   .pricing-grid {
     display: flex;
