@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(python create_placeholders.py:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(dir:*)",
+      "Bash(del:*)"
+    ]
+  }
+}
